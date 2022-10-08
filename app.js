@@ -12,7 +12,7 @@ app.use(express.json())
 
 // rote api
 app.get('/', (req, res) =>{
-    res.send('Running server')
+    res.send('Running server succesfully')
 })
 
 
