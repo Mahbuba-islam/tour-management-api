@@ -12,8 +12,10 @@ app.use(express.json())
 
 // rote api
 app.get('/', (req, res) =>{
-    res.send('Running server succesfully')
+    res.send('running server')
 })
+
+
 
 
 app.use('/api/v1/tour', tourRoute)

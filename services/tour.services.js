@@ -47,16 +47,9 @@ exports.updateTourServices = async (id, data) => {
 
 // cheapestTourService
 exports.cheapestTourService = async()=>{
-
+  
   const result = await Tour.find().sort({ price: 1 }).limit(3)
   console.log(result)
   return result
 }
 
-//topViewedTourService
-exports.topViewedTourService = async(data)=>{
-
-  const result = await Tour.find().count({data}).sort({viewCount:1})
-  console.log(result)
-  return result
-}
